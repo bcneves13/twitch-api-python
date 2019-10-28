@@ -8,7 +8,7 @@ class ApiRequests():
         self.api_secret = api_secret
         self.headers = {
             'Client-ID': self.api_key,
-            # 'Accept': 'application/vnd.twitchtv.v5+json',
+            'Accept': 'application/vnd.twitchtv.v5+json',
             'Authorization': 'Bearer ' + self.api_secret
         }
     def getRequest(self, endpoint, params={}):
